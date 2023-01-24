@@ -27,4 +27,5 @@ Fortunately for our users, we've provided a 'WARNING' that blocks out potentiall
 - Use the 'Submit a Joke' form to submit a joke of your own
 - Type in the 'Setup' for the joke in the first textbox on the form
 - Type in the 'Delivery' for the joke in the second textbox of the form
+- Use the checkboxes to indicate whether or not a joke you submit falls under one of our 'flagged' categories (Don't worry, this doesn't prevent the joke from being posted)
 
