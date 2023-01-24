@@ -88,6 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     
     let sexistCheckbox = document.querySelector(['#sexist'])
+    sexistCheckbox.addEventListener('change', () => {
+        if (sexistCheckbox.checked) {
+            sexistCheckbox.setAttribute("value", "true")
+        } else {
+            sexistCheckbox.setAttribute("value", "false")
+        }
+    })
+    
     let explicitCheckbox = document.querySelector(['#explicit'])
 
     function submitJoke(joke) {
