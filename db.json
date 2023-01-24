@@ -7,12 +7,12 @@
       "setup": "You see, mountains aren't just funny.",
       "delivery": "They are hill areas.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "safe": true,
       "id": 1,
@@ -26,12 +26,12 @@
       "setup": "What's Santa's favourite type of music?",
       "delivery": "Wrap!",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 2,
       "likes": 0,
@@ -45,12 +45,12 @@
       "setup": "Did you hear about the claustrophobic astronaut?",
       "delivery": "He just needed a little space.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "safe": true,
       "id": 3,
@@ -64,12 +64,12 @@
       "setup": "Why did the web developer walk out of a resturant in disgust?",
       "delivery": "The seating was laid out in tables.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 4,
       "likes": 0,
@@ -83,12 +83,12 @@
       "setup": "Two peanuts were walking.",
       "delivery": "One was assaulted.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 5,
       "likes": 0,
@@ -102,12 +102,12 @@
       "setup": "Why do Java programmers hate communism?",
       "delivery": "They don't want to live in a classless society.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 6,
       "likes": 0,
@@ -121,12 +121,12 @@
       "setup": "Why didn't the skeleton go for prom?",
       "delivery": "Because it had nobody.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 7,
       "likes": 0,
@@ -140,12 +140,12 @@
       "setup": "My employer came running to me and said, \"I was looking for you all day! Where the hell have you been?\"",
       "delivery": "I replied, \"Good employees are hard to find.\"",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "safe": true,
       "id": 8,
@@ -159,12 +159,12 @@
       "setup": "Why do Java programmers hate communism?",
       "delivery": "They don't want to live in a classless society.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 9,
       "likes": 0,
@@ -178,18 +178,17 @@
       "setup": "Why was the river rich?",
       "delivery": "Because it had two banks.",
       "flags": {
-      "nsfw": false,
-      "religious": false,
-      "political": false,
-      "racist": false,
-      "sexist": false,
-      "explicit": false
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
       },
       "id": 10,
       "likes": 0,
       "safe": true,
       "lang": "en"
     }
-        
   ]
 }
