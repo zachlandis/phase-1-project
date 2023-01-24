@@ -54,54 +54,54 @@ document.addEventListener('DOMContentLoaded', () => {
     let nsfwCheckbox = document.querySelector("input[name=nsfw]")
     nsfwCheckbox.addEventListener('change', () => {
         if (nsfwCheckbox.checked) {
-            nsfwCheckbox.setAttribute("value", "true")
+            nsfwCheckbox.setAttribute("value", true)
         } else {
-            nsfwCheckbox.setAttribute("value", "false")
+            nsfwCheckbox.setAttribute("value", false)
         }
     })
 
     let religiousCheckbox = document.querySelector(['#religious'])
     religiousCheckbox.addEventListener('change', () => {
         if (religiousCheckbox.checked) {
-            religiousCheckbox.setAttribute("value", "true")
+            religiousCheckbox.setAttribute("value", true)
         } else {
-            religiousCheckbox.setAttribute("value", "false")
+            religiousCheckbox.setAttribute("value", false)
         }
     })
 
     let politicalCheckbox = document.querySelector(['#political'])
     politicalCheckbox.addEventListener('change', () => {
         if (politicalCheckbox.checked) {
-            politicalCheckbox.setAttribute("value", "true")
+            politicalCheckbox.setAttribute("value", true)
         } else {
-            politicalCheckbox.setAttribute("value", "false")
+            politicalCheckbox.setAttribute("value", false)
         }
     })
 
     let racistCheckbox = document.querySelector(['#racist'])
     racistCheckbox.addEventListener('change', () => {
         if (racistCheckbox.checked) {
-            racistCheckbox.setAttribute("value", "true")
+            racistCheckbox.setAttribute("value", true)
         } else {
-            racistCheckbox.setAttribute("value", "false")
+            racistCheckbox.setAttribute("value", false)
         }
     })
     
     let sexistCheckbox = document.querySelector(['#sexist'])
     sexistCheckbox.addEventListener('change', () => {
         if (sexistCheckbox.checked) {
-            sexistCheckbox.setAttribute("value", "true")
+            sexistCheckbox.setAttribute("value", true)
         } else {
-            sexistCheckbox.setAttribute("value", "false")
+            sexistCheckbox.setAttribute("value", false)
         }
     })
     
     let explicitCheckbox = document.querySelector(['#explicit'])
     explicitCheckbox.addEventListener('change', () => {
         if (explicitCheckbox.checked) {
-            explicitCheckbox.setAttribute("value", "true")
+            explicitCheckbox.setAttribute("value", true)
         } else {
-            explicitCheckbox.setAttribute("value", "false")
+            explicitCheckbox.setAttribute("value", false)
         }
     })
     

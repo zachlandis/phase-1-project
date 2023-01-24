@@ -227,6 +227,20 @@
       "likes": 0,
       "safe": true,
       "lang": "en"
+    },
+    {
+      "setup": "true value",
+      "delivery": "false value",
+      "likes": 0,
+      "flags": {
+        "nsfw": "true",
+        "religious": "true",
+        "political": "true",
+        "racist": "false",
+        "sexist": "true",
+        "explicit": "true"
+      },
+      "id": 13
     }
   ]
 }
