@@ -1,8 +1,9 @@
 Welcome to the Jokester App!
 
-# How to use this app
+We at Jokester believe there's nothing better than a good joke to brighten up your day. 
 
-- Click on the 'Punchline' button to see the joke's punchline
-- Click on the 'Like' button to LIKE the joke
-- Everytime you a like a joke, the like counter increases
-- Use the 'Submit a Joke' form to submit a joke of your own
+While we realize that certain jokes aren't for everyone, this app does contain jokes that may contain NSFW (Not Safe For Work), religious, political, racist, sexist, and/or explicit material. 
+
+Fortunately for our users, we've provided a 'WARNING' that blocks out potentially sensitive, 'flagged' content before the user can access it. 
+
+
