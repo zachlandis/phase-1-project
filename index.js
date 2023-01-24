@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nsfwCheckbox = document.querySelector("input[name=nsfw]")
     nsfwCheckbox.addEventListener('change', () => {
         if (nsfwCheckbox.checked) {
-            console.log('nsfwCheckbox is checked')
+            nsfwCheckbox.setAttribute("value", "true")
         }
     })
 

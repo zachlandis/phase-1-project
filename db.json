@@ -227,6 +227,20 @@
       "likes": 0,
       "safe": true,
       "lang": "en"
+    },
+    {
+      "setup": "knock knock",
+      "delivery": "who's there",
+      "likes": 0,
+      "flags": {
+        "nsfw": "true",
+        "religious": "on",
+        "political": "on",
+        "racist": "on",
+        "sexist": "on",
+        "explicit": "on"
+      },
+      "id": 13
     }
   ]
 }
