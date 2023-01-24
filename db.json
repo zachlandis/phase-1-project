@@ -229,16 +229,16 @@
       "lang": "en"
     },
     {
-      "setup": "true value",
-      "delivery": "false value",
+      "setup": "no",
+      "delivery": "quotes",
       "likes": 0,
       "flags": {
         "nsfw": "true",
-        "religious": "true",
-        "political": "true",
-        "racist": "false",
-        "sexist": "true",
-        "explicit": "true"
+        "religious": "on",
+        "political": "on",
+        "racist": "on",
+        "sexist": "on",
+        "explicit": "on"
       },
       "id": 13
     }

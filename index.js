@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "delivery": formDeliveryInput.value,
                     "likes": 0,
                     "flags": {
-                        "nsfw": nsfwCheckbox.value,
+                        "nsfw": nsfwCheckbox.value.replace(/"|'/g , ''),
                         "religious": religiousCheckbox.value,
                         "political": politicalCheckbox.value,
                         "racist": racistCheckbox.value,
