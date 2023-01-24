@@ -14,5 +14,13 @@
 }
 
 #form_container {
+    margin-left: 200px;
+    color: white;
+    text-align: center;
+    width: 400px;
     background-color: blue;
+}
+
+.textarea {
+    width: 350px;
 }

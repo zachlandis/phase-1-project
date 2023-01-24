@@ -37,12 +37,42 @@ document.addEventListener('DOMContentLoaded', () => {
             likes.textContent = `Likes: ${joke.likes}`
 
         })
-
-
-
         document.querySelector('#joke_container').append(card)
         card.append(setup, delivery, deliveryBtn, likeBtn, likes)   
     }
+
+    let form = document.querySelector('#submit_joke')
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        submitJoke(e)
+        form.reset()
+    })
+
+    let formSetupInput = document.querySelector(['#joke_setup'])
+    let formDeliveryInput = document.querySelector(['#joke_delivery'])
+
+    function submitJoke(joke) {
+        // console.log(formSetupInput.value)
+        // console.log(formDeliveryInput.value)
+        fetch(`http://localhost:3000/jokes/`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    "setup": formSetupInput.value,
+                    "delivery": formDeliveryInput.value,
+                    "likes": 0
+                })
+            })
+            .then(res => res.json())
+            .then(data => buildJokeCards(data))
+    }
+    
+
 })
+
+
 
 
