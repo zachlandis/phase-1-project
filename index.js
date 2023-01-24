@@ -1,4 +1,4 @@
-///////////////////////////// GET & BUILD JOKE CARDS //////////////////////////////
+///////// GET, BUILD JOKE CARDS, EVENT LISTENER (1; DOMContentLoaded) ///////////
 document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3000/jokes')
     .then(res => res.json())
@@ -8,30 +8,48 @@ document.addEventListener('DOMContentLoaded', () => {
         let card = document.createElement('div')
         card.className = 'joke_card'
 
+        let setupDiv = document.createElement('div')
+        
         let setup = document.createElement('h3')
         setup.textContent = `${joke.setup}`
 
-        let warning = `Warning, this joke contains flagged material`
+
+///////// EVENT LISTENER TO SWAP WARNING W/ PUNCHLINE (2; 'MOUSEOVER') ///////////////////
         
+        let warning = `WARNING: This joke may contain nsfw, religious, political, racist, sexist, or explicit material`
+        
+        let deliveryDiv = document.createElement('div')
+
         let delivery = document.createElement('p')
         delivery.textContent = warning
-
-        let deliveryBtn = document.createElement('button')
-        deliveryBtn.textContent = "Punchline"
-        deliveryBtn.addEventListener('click', () => {
+        delivery.addEventListener('mouseover', () => {
             if (delivery.textContent === warning) {
                 delivery.textContent = `${joke.delivery}`
             } else {
                 delivery.textContent = warning
             }
+
+
+/* I HAD A 'PUNCHLINE' BUTTON TO SHOW THE PUNCHLINE. 
+THE PROJECT REQUIRES 3 DISTINCT EVENT LISTENERS,
+SO I CHANGED DELIVERY TO A MOUSOVER EVENT 
+I PREFERRED THE BUTTON BUT THAT'S OK*/
+
+        // let deliveryBtn = document.createElement('button')
+        // deliveryBtn.textContent = "Punchline"
+        
             
             
         })
 
+////////////////////// LIKE BTN, COUNTER, LISTENER (3; 'CLICK'), & PATCH //////////////////////        
+
+        let likeDiv = document.createElement('div')
+
         let likes = document.createElement('p')
         likes.textContent = `Likes: ${joke.likes}`
 
-////////////////////// LIKE BTN, COUNTER, LISTENER (1), & PATCH //////////////////////        
+
         let likeBtn = document.createElement('button')
         likeBtn.textContent = "Like"
         likeBtn.addEventListener('click', () => {
@@ -50,11 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
             likes.textContent = `Likes: ${joke.likes}`
 
         })
+
+//////////////// APPENDS /////////////////////////////
+
         document.querySelector('#joke_container').append(card)
-        card.append(setup, delivery, deliveryBtn, likeBtn, likes)   
+        card.append(setupDiv, deliveryDiv, likeDiv)
+        setupDiv.append(setup)
+        deliveryDiv.append(delivery)
+        likeDiv.append(likeBtn, likes)
+        
     }
 
-////////////////////////////// FORM LISTENER (2) //////////////////////////////
+////////////////////////////// FORM LISTENER (4; 'SUBMIT') //////////////////////////////
     let form = document.querySelector('#submit_joke')
     form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -65,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let formSetupInput = document.querySelector(['#joke_setup'])
     let formDeliveryInput = document.querySelector(['#joke_delivery'])
 
-////////////////////////////// CHECKBOX LISTENERS (8) //////////////////////////////    
+////////////////////////////// CHECKBOX LISTENERS (5; 'CHANGE') //////////////////////////////    
     let nsfwCheckbox = document.querySelector(['#nsfw'])
     nsfwCheckbox.addEventListener('change', () => {
         if (nsfwCheckbox.checked) {
