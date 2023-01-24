@@ -15,3 +15,12 @@ Fortunately for our users, we've provided a 'WARNING' that blocks out potentiall
 - To read the 'punchline' (or delivery) for each joke, simply hover over the warning
 - To re-hide the punchline, hover over it and the Warning will come back to hide the punchline
 
+## To 'Like' our jokes
+
+- Click on the 'Like' button to LIKE the joke
+- Everytime a user likes a joke, the like counter increases
+- These likes never go away. Users can come back and like a joke again at any time.
+
+
+
+
