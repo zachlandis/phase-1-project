@@ -1,3 +1,4 @@
+///////////////////////////// GET & BUILD JOKE CARDS //////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3000/jokes')
     .then(res => res.json())
@@ -10,15 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
         let setup = document.createElement('h3')
         setup.textContent = `${joke.setup}`
 
+        let warning = `Warning, this joke contains flagged material`
+        
         let delivery = document.createElement('p')
+        delivery.textContent = warning
 
         let deliveryBtn = document.createElement('button')
         deliveryBtn.textContent = "Punchline"
-        deliveryBtn.addEventListener('click', () => delivery.append(joke.delivery))
+        deliveryBtn.addEventListener('click', () => {
+            delivery.textContent = `${joke.delivery}`
+        })
 
         let likes = document.createElement('p')
         likes.textContent = `Likes: ${joke.likes}`
 
+////////////////////// LIKE BTN, COUNTER, LISTENER (1), & PATCH //////////////////////        
         let likeBtn = document.createElement('button')
         likeBtn.textContent = "Like"
         likeBtn.addEventListener('click', () => {
@@ -41,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.append(setup, delivery, deliveryBtn, likeBtn, likes)   
     }
 
+////////////////////////////// FORM LISTENER (2) //////////////////////////////
     let form = document.querySelector('#submit_joke')
     form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -50,8 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let formSetupInput = document.querySelector(['#joke_setup'])
     let formDeliveryInput = document.querySelector(['#joke_delivery'])
-    
-    let nsfwCheckbox = document.querySelector("input[name=nsfw]")
+
+////////////////////////////// CHECKBOX LISTENERS (8) //////////////////////////////    
+    let nsfwCheckbox = document.querySelector(['#nsfw'])
     nsfwCheckbox.addEventListener('change', () => {
         if (nsfwCheckbox.checked) {
             nsfwCheckbox.setAttribute("value", true)
@@ -106,9 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     
 
+////////////////////// SUBMIT JOKE POST & BUILD CARD W/ SUBMISSION //////////////////////
+
     function submitJoke(joke) {
-        // console.log(formSetupInput.value)
-        // console.log(formDeliveryInput.value)
         fetch(`http://localhost:3000/jokes/`, {
                 method: 'POST',
                 headers: {
@@ -120,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     "delivery": formDeliveryInput.value,
                     "likes": 0,
                     "flags": {
-                        "nsfw": nsfwCheckbox.value.replace(/"|'/g , ''),
+                        "nsfw": nsfwCheckbox.value,
                         "religious": religiousCheckbox.value,
                         "political": politicalCheckbox.value,
                         "racist": racistCheckbox.value,
@@ -133,8 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => res.json())
             .then(data => buildJokeCards(data))
     }
-    
-
 })
 
 

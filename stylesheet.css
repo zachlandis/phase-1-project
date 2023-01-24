@@ -14,10 +14,10 @@
 }
 
 #form_container {
-    margin-left: 200px;
+    margin: auto;
     color: white;
     text-align: center;
-    width: 400px;
+    width: 50%;
     background-color: blue;
 }
 
