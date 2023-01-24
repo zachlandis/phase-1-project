@@ -59,10 +59,10 @@
     },
     {
       "error": false,
-      "category": "Pun",
+      "category": "Programming",
       "type": "twopart",
-      "setup": "Two peanuts were walking.",
-      "delivery": "One was assaulted.",
+      "setup": "Why did the web developer walk out of a resturant in disgust?",
+      "delivery": "The seating was laid out in tables.",
       "flags": {
       "nsfw": false,
       "religious": false,
