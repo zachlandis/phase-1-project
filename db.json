@@ -135,23 +135,23 @@
     },
     {
       "error": false,
-      "category": "Pun",
+      "category": "Programming",
       "type": "twopart",
-      "setup": "My employer came running to me and said, \"I was looking for you all day! Where the hell have you been?\"",
-      "delivery": "I replied, \"Good employees are hard to find.\"",
+      "setup": "Why are modern programming languages so materialistic?",
+      "delivery": "Because they are object-oriented.",
       "flags": {
-        "nsfw": false,
-        "religious": false,
-        "political": false,
-        "racist": false,
-        "sexist": false,
-        "explicit": false
+      "nsfw": false,
+      "religious": false,
+      "political": false,
+      "racist": false,
+      "sexist": false,
+      "explicit": false
       },
-      "safe": true,
       "id": 8,
       "likes": 0,
+      "safe": true,
       "lang": "en"
-    },
+      },
     {
       "error": false,
       "category": "Programming",
@@ -186,6 +186,44 @@
         "explicit": false
       },
       "id": 10,
+      "likes": 0,
+      "safe": true,
+      "lang": "en"
+    },
+    {
+      "error": false,
+      "category": "Pun",
+      "type": "twopart",
+      "setup": "Why shouldn't you visit an expensive wig shop?",
+      "delivery": "It's too high a price \"toupee.\"",
+      "flags": {
+      "nsfw": false,
+      "religious": false,
+      "political": false,
+      "racist": false,
+      "sexist": false,
+      "explicit": false
+      },
+      "safe": true,
+      "id": 11,
+      "likes": 0,
+      "lang": "en"
+    },
+    {
+      "error": false,
+      "category": "Pun",
+      "type": "twopart",
+      "setup": "A grocery store cashier asked if I would like my milk in a bag.",
+      "delivery": "I told her \"No, thanks. The carton works fine\".",
+      "flags": {
+      "nsfw": false,
+      "religious": false,
+      "political": false,
+      "racist": false,
+      "sexist": false,
+      "explicit": false
+      },
+      "id": 12,
       "likes": 0,
       "safe": true,
       "lang": "en"

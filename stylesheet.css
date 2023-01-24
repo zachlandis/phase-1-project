@@ -3,9 +3,14 @@
 }
 
 .joke_card {
-    display: inline-block;
+    text-align: center;
+    display: inline-grid;
     border: 1px solid #ccc;
     background-color: pink;
+    padding: 1rem;
+    width: 10rem;
+    height: 20rem;
+    margin: 1rem 2rem;
 }
 
 #form_container {
