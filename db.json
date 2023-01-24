@@ -227,12 +227,6 @@
       "likes": 0,
       "safe": true,
       "lang": "en"
-    },
-    {
-      "setup": "Why did the chicken cross the road",
-      "delivery": "to get to the other side",
-      "likes": 3,
-      "id": 13
     }
   ]
 }

@@ -50,6 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let formSetupInput = document.querySelector(['#joke_setup'])
     let formDeliveryInput = document.querySelector(['#joke_delivery'])
+    let nsfwCheckbox = document.querySelector(['#nsfw'])
+    let religiousCheckbox = document.querySelector(['#religious'])
+    let politicalCheckbox = document.querySelector(['#political'])
+    let racistCheckbox = document.querySelector(['#racist'])
+    let sexistCheckbox = document.querySelector(['#sexist'])
+    let explicitCheckbox = document.querySelector(['#explicit'])
 
     function submitJoke(joke) {
         // console.log(formSetupInput.value)
@@ -63,7 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({
                     "setup": formSetupInput.value,
                     "delivery": formDeliveryInput.value,
-                    "likes": 0
+                    "likes": 0,
+                    // "flags": {
+                    //     "nsfw": nsfwCheckbox
+                    // }
+
                 })
             })
             .then(res => res.json())
