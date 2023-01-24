@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'joke_card'
 
         let setupDiv = document.createElement('div')
+        setupDiv.className = "joke-divs"
+        setupDiv.id = "setup-div"
         
         let setup = document.createElement('h3')
         setup.textContent = `${joke.setup}`
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let warning = `WARNING: This joke may contain nsfw, religious, political, racist, sexist, or explicit material`
         
         let deliveryDiv = document.createElement('div')
+        deliveryDiv.className = "joke-divs"
 
         let delivery = document.createElement('p')
         delivery.textContent = warning
@@ -28,12 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 delivery.textContent = warning
             }
-
-
-/* I HAD A 'PUNCHLINE' BUTTON TO SHOW THE PUNCHLINE. 
-THE PROJECT REQUIRES 3 DISTINCT EVENT LISTENERS,
-SO I CHANGED DELIVERY TO A MOUSOVER EVENT 
-I PREFERRED THE BUTTON BUT THAT'S OK*/
 
         // let deliveryBtn = document.createElement('button')
         // deliveryBtn.textContent = "Punchline"
@@ -45,6 +42,7 @@ I PREFERRED THE BUTTON BUT THAT'S OK*/
 ////////////////////// LIKE BTN, COUNTER, LISTENER (3; 'CLICK'), & PATCH //////////////////////        
 
         let likeDiv = document.createElement('div')
+        likeDiv.className = "joke-divs"
 
         let likes = document.createElement('p')
         likes.textContent = `Likes: ${joke.likes}`
