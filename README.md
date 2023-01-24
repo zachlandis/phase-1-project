@@ -22,5 +22,9 @@ Fortunately for our users, we've provided a 'WARNING' that blocks out potentiall
 - These likes never go away. Users can come back and like a joke again at any time.
 
 
+### To 'Submit' your own jokes
 
+- Use the 'Submit a Joke' form to submit a joke of your own
+- Type in the 'Setup' for the joke in the first textbox on the form
+- Type in the 'Delivery' for the joke in the second textbox of the form
 
