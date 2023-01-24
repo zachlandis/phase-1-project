@@ -55,10 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
     nsfwCheckbox.addEventListener('change', () => {
         if (nsfwCheckbox.checked) {
             nsfwCheckbox.setAttribute("value", "true")
+        } else {
+            nsfwCheckbox.setAttribute("value", "false")
         }
     })
 
     let religiousCheckbox = document.querySelector(['#religious'])
+    religiousCheckbox.addEventListener('change', () => {
+        if (religiousCheckbox.checked) {
+            religiousCheckbox.setAttribute("value", "true")
+        } else {
+            religiousCheckbox.setAttribute("value", "false")
+        }
+    })
+
     let politicalCheckbox = document.querySelector(['#political'])
     let racistCheckbox = document.querySelector(['#racist'])
     let sexistCheckbox = document.querySelector(['#sexist'])
