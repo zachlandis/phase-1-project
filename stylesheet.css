@@ -2,8 +2,14 @@ body {
     background-color: lightgray;
 }
 
+#joke_container {
+    margin: auto;
+    width: 100%;
+}
+
 #header {
-    color: seagreen;
+    color: lightseagreen;
+    outline: black;
 }
 
 .joke_card {

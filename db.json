@@ -16,7 +16,7 @@
       },
       "safe": true,
       "id": 1,
-      "likes": 0,
+      "likes": 3,
       "lang": "en"
     },
     {
@@ -227,6 +227,20 @@
       "likes": 0,
       "safe": true,
       "lang": "en"
+    },
+    {
+      "setup": "Why did the chicken cross the road?",
+      "delivery": "To get to the other side hahaha",
+      "likes": 1,
+      "flags": {
+        "nsfw": "false",
+        "religious": "false",
+        "political": "false",
+        "racist": "false",
+        "sexist": "false",
+        "explicit": "false"
+      },
+      "id": 13
     }
   ]
 }
