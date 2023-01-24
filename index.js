@@ -51,7 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let formSetupInput = document.querySelector(['#joke_setup'])
     let formDeliveryInput = document.querySelector(['#joke_delivery'])
     
-    let nsfwCheckbox = document.querySelector(['#nsfw'])
+    let nsfwCheckbox = document.querySelector("input[name=nsfw]")
+    nsfwCheckbox.addEventListener('change', () => {
+        if (nsfwCheckbox.checked) {
+            console.log('nsfwCheckbox is checked')
+        }
+    })
+
     let religiousCheckbox = document.querySelector(['#religious'])
     let politicalCheckbox = document.querySelector(['#political'])
     let racistCheckbox = document.querySelector(['#racist'])
