@@ -70,6 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     let politicalCheckbox = document.querySelector(['#political'])
+    politicalCheckbox.addEventListener('change', () => {
+        if (politicalCheckbox.checked) {
+            politicalCheckbox.setAttribute("value", "true")
+        } else {
+            politicalCheckbox.setAttribute("value", "false")
+        }
+    })
+    
     let racistCheckbox = document.querySelector(['#racist'])
     let sexistCheckbox = document.querySelector(['#sexist'])
     let explicitCheckbox = document.querySelector(['#explicit'])
