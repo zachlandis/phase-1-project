@@ -12,14 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let likeBtn = document.createElement('button')
         likeBtn.textContent = "Like"
-        likeBtn.addEventListener('click', (e) => {
-            console.log('joke was liked')
-        })
+        likeBtn.addEventListener('click', (e) => {increaseLikes(joke)})
 
         document.querySelector('#joke_container').append(card)
-        card.append(setup, likeBtn)
-        
+        card.append(setup, likeBtn)   
     }
 })
 
-
+function increaseLikes(joke) {
+    console.log(joke)
+}
