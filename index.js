@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let formSetupInput = document.querySelector(['#joke_setup'])
     let formDeliveryInput = document.querySelector(['#joke_delivery'])
+    
     let nsfwCheckbox = document.querySelector(['#nsfw'])
     let religiousCheckbox = document.querySelector(['#religious'])
     let politicalCheckbox = document.querySelector(['#political'])
@@ -70,9 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     "setup": formSetupInput.value,
                     "delivery": formDeliveryInput.value,
                     "likes": 0,
-                    // "flags": {
-                    //     "nsfw": nsfwCheckbox
-                    // }
+                    "flags": {
+                        "nsfw": nsfwCheckbox.value,
+                        "religious": religiousCheckbox.value,
+                        "political": politicalCheckbox.value,
+                        "racist": racistCheckbox.value,
+                        "sexist": sexistCheckbox.value,
+                        "explicit": explicitCheckbox.value,
+                    }
 
                 })
             })
