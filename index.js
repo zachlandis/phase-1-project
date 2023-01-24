@@ -97,6 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     
     let explicitCheckbox = document.querySelector(['#explicit'])
+    explicitCheckbox.addEventListener('change', () => {
+        if (explicitCheckbox.checked) {
+            explicitCheckbox.setAttribute("value", "true")
+        } else {
+            explicitCheckbox.setAttribute("value", "false")
+        }
+    })
+    
 
     function submitJoke(joke) {
         // console.log(formSetupInput.value)
