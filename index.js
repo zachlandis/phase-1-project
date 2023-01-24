@@ -19,7 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let deliveryBtn = document.createElement('button')
         deliveryBtn.textContent = "Punchline"
         deliveryBtn.addEventListener('click', () => {
-            delivery.textContent = `${joke.delivery}`
+            if (delivery.textContent === warning) {
+                delivery.textContent = `${joke.delivery}`
+            } else {
+                delivery.textContent = warning
+            }
+            
+            
         })
 
         let likes = document.createElement('p')
